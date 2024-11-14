@@ -901,14 +901,15 @@ hr {
 
     .tab_view_search {
         display: flex;
-        height: 66px;
+        height: 64px;
         text-align: left;
         background-color: rgb(255, 255, 255);
         border: 1px solid rgb(221, 221, 221);
         border-radius: 32px;
         align-items: center;
-        margin-top: 1px;
+        margin-top: 2px;
         max-width: 848px;
+        box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 5px 1px;
     }
 
     .tab_view_search_first_section {
@@ -1182,6 +1183,7 @@ hr {
         align-items: center;
         text-align: center;
         line-height: 10px;
+        margin-top: 2px;
     }
 
     .footer_social_logo {
@@ -1189,6 +1191,7 @@ hr {
         width: 86px;
         height: 18px;
         justify-content: space-between;
+        margin-bottom: 0px;
     }
 
     .footer_first_section1 {
@@ -1205,11 +1208,15 @@ hr {
         font-size: 14px;
         font-weight: 500;
         line-height: 10px;
-        margin-bottom: 7px;
+        margin-bottom: 10px;
     }
     .footer_copyright_section_languages{
         margin-bottom: 10px;
         align-items: center;
+    }
+    .copyright_section{
+        margin-bottom: 0px;
+        line-height: 10px;
     }
     .language{
         display: flex;
@@ -1252,6 +1259,7 @@ hr {
 
     .footer_section2 {
         grid-template-columns: repeat(3, 1fr);
+        column-gap: 8px;
     }
 
     .footer_hr_lines {
@@ -1295,6 +1303,14 @@ hr {
         line-height: 18px;
     
     }
+    .footer_services{
+        padding: 48px 0px;
+        
+    }
+    .copyright_section_inner{
+        margin-top: 2px;
+    }
+   
 
 }
 
@@ -1319,12 +1335,16 @@ hr {
     .main_contents2 {
         grid-template-columns: repeat(4, minmax(0, 1fr));
     }
+    .footer_heading{
+        margin-bottom: 12px;
+    }
     .footer_categories_lists_tab_view{
         display: none;
     }
+   
     .footer_categories_lists_large_view{
         display: block;
-        padding-top: 21px;
+        padding-top: 32px;
 
     }
     .footer_categories_lists_items1{
@@ -1345,8 +1365,25 @@ hr {
     .copyright_section_main {
         display: flex;
         align-items: center;
+        gap:18px;
+    }
+    .footer_copyright_section{
+        padding: 14px 40px 10px 40px;
+        margin-top: 2px;
+    }
+    .footer_copyright_section_inner{
+        line-height: 1px;
+    }
+    .footer_copyright_section_languages{
+        margin-right: 0px;
+    }
+    .footer_copyright_section_languages_inner{
+    }
+    .inr_text{
+        margin-right: 25px;
     }
 }
+
 
 @media screen and (min-width:1440px) {
     .nav_tab_view_first_section {
