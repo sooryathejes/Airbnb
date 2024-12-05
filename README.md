@@ -1,1 +1,1 @@
-https://aibnb-clone.netlify.app/
+https://serene-clafoutis-8fe183.netlify.app/
