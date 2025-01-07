@@ -507,6 +507,7 @@ section {
 /* ----------------------footer-section-------------------------- */
 footer {
     background: #F7F7F7;
+    padding-bottom: 65px;
 }
 
 .footer_first_section1 {
@@ -675,81 +676,6 @@ hr {
     line-height: 20px;
 }
 
-.footer_copyright_section {
-    padding: 24px 0px;
-}
-
-.footer_copyright_section_languages {
-    margin-bottom: 22px;
-}
-
-.footer_copyright_section_languages_text {
-    display: flex;
-    align-items: center;
-}
-
-.footer_copyright_section_languages_text span {
-    color: var(--font-black);
-    font-family: air;
-    font-size: 14px;
-    font-weight: 500;
-    line-height: 18px;
-}
-
-.inr_text {
-    margin-right: 48px;
-}
-
-.language {
-    display: flex;
-    gap: 8px;
-    margin-right: 24px;
-}
-
-.footer_social_logo {
-    display: none;
-}
-
-.footer_copyright_section {
-    padding: 24px;
-}
-
-.copyright_section_main {
-    line-height: 20.02px;
-}
-
-.copyright_section {
-    margin-bottom: 4px;
-    font-size: 14px;
-    font-family: air;
-    line-height: 18px;
-    color: var(--font-black);
-
-}
-
-.copyright_section_inner {
-    margin-top: 2px;
-}
-
-.copyright_section_inner ol {
-    display: flex;
-    flex-wrap: wrap;
-    margin-top: 2px;
-}
-
-.copyright_section_inner ol li {
-    list-style: none;
-}
-
-.copyright_section_inner ol li a {
-    text-decoration: none;
-    color: var(--font-black);
-    font-size: 14px;
-    font-family: air;
-    line-height: 26.02px;
-    color: var(--font-black);
-}
-
 .nav_tab_view {
     display: none;
 }
@@ -829,6 +755,64 @@ hr {
     height: 32px;
 }
 .airbnb_text_logo{
+    display: none;
+}
+.footer_copyright_section{
+    padding: 25px 24px 24px 24px;
+}
+.footer_languages{
+    font-size: 14px;
+    line-height: 18px;
+    font-family: air;
+    font-weight: 500;
+    margin-bottom: 23px;
+}
+.globe{
+    margin-right: 8px;
+}
+.english_inner{
+    margin-top: -1px;
+}
+.english{
+    margin-right: 24px;
+}
+.cash{
+    display: flex;
+    margin-top: -1px;
+}
+.rupee{
+    font-size: 16px; 
+    margin-right: 5px;
+}
+.footer_languages{
+    display: flex;
+}
+.english{
+    display: flex;
+}
+.copyright_main{
+    display: flex;
+    flex-direction: column;
+}
+.copyright{
+    font-size: 14px;
+    line-height: 18px;
+    font-family: air;
+    margin-bottom: 2px;
+}   
+.privacy_policy{
+    display: flex;
+    flex-wrap: wrap;          
+    margin-top: 2px;
+    font-size: 14px;
+    line-height: 26px;
+    font-family: air;
+}
+.privacy_policy span{
+    min-width: 19px;
+    text-align: center;
+}
+.social_media{
     display: none;
 }
 @media screen and (min-width:375px) {
@@ -1173,6 +1157,7 @@ hr {
 
     section {
         padding: 0px 40px;
+        margin: 16px 0px 48px;
     }
 
     .main_contents {
@@ -1191,7 +1176,6 @@ hr {
         padding: 0px 40px;
     }
 
-    .hr_scroll_tab_view_section1 {}
 
     .tab_view_hr_scroll_buttons {
         display: flex;
@@ -1249,53 +1233,37 @@ hr {
         justify-self: flex-end;
 
     }
-
-    .footer_copyright_section_inner {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        text-align: center;
-        line-height: 10px;
-        margin-top: 2px;
+    footer{
+        padding-bottom: 0px;
     }
-
-    .footer_social_logo {
-        display: flex;
-        width: 86px;
-        height: 18px;
-        justify-content: space-between;
-        margin-bottom: 0px;
-    }
-
-    .footer_first_section1 {
+    .footer_first_section1{
         padding: 48px 40px;
     }
-
-    .footer_section2 {
+    .footer_section2{
         padding: 0px 40px;
-
     }
-    .footer_copyright_section_languages_text span {
-        color: var(--font-black);
-        font-family: air;
-        font-size: 14px;
-        font-weight: 500;
-        line-height: 10px;
-        margin-bottom: 10px;
-    }
-    .footer_copyright_section_languages{
-        margin-bottom: 10px;
-        align-items: center;
-    }
-    .copyright_section{
-        margin-bottom: 0px;
-        line-height: 10px;
-    }
-    .language{
+    .footer_copyright_section{
         display: flex;
+        flex-direction: column;
+        text-align: center;
         align-items: center;
-    }
+        padding: 25px 40px 24px 40pxpx;
 
+    }
+    .social_media{
+        display: flex;
+        margin-left: 48px;
+        gap: 16px;
+    }
+    .footer_languages{
+        margin-bottom: 16px;
+    }
+    .copyright{
+        margin-bottom: 1px;
+    }
+    .privacy_policy{
+        line-height: 18px;
+    }
 }
 @media screen and (min-width:798px){
     .next_button_mobile_view{
@@ -1425,41 +1393,28 @@ hr {
     .footer_categories_lists_items1{
         grid-template-columns: repeat(6,1fr);
     }
-
-    .footer_copyright_section {
-        padding: 24px 40px;
-    }
-
-    .footer_copyright_section_inner {
+    .footer_copyright_section{
         display: flex;
         flex-direction: row-reverse;
+        padding: 25px 40px 24px 40px;
         justify-content: space-between;
-        align-items: baseline;
+        max-width: 1541.33px;
+        margin: 0px auto;
     }
-
-    .copyright_section_main {
+    .copyright_main{
         display: flex;
-        align-items: center;
-        gap:18px;
+        flex-direction: row;
     }
-    .footer_copyright_section{
-        padding: 14px 40px 10px 40px;
-        margin-top: 2px;
+    .footer_languages{
+        margin-bottom: 0px;
     }
-    .footer_copyright_section_inner{
-        line-height: 1px;
+    .social_media{
+        margin-left: 24px;
     }
-    .footer_copyright_section_languages{
-        margin-right: 0px;
-    }
-    .footer_copyright_section_languages_inner{
-    }
-    .inr_text{
-        margin-right: 25px;
-    }
-}
-
-
+    .copyright_main{
+        gap: 19px;      
+    } 
+} 
 @media screen and (min-width:1440px) {
     .nav_tab_view_first_section {
         padding: 0px 80px;
@@ -1480,10 +1435,11 @@ hr {
     .footer_section2 {
         padding: 0px 80px;
     }
-
-    .footer_copyright_section {
-        padding: 24px 80px;
+    .footer_copyright_section{
+        padding: 25px 80px 24px;
     }
+
+   
 }
 
 @media screen and (min-width:1640px) {
@@ -1515,9 +1471,5 @@ hr {
         width: 60%;
         justify-self: center;
     }
-
-    .footer_copyright_section {
-        width: 60%;
-        justify-self: center;
-    }
-}
+}  
+                    
